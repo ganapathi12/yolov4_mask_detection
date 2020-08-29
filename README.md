@@ -17,9 +17,7 @@ Now, we have created two files train.txt and test.txt, these files will contain 
 we created a file obj.data in the build/darknet/x64/data folder.
 then we edit yolo detector file in such a way that every 100 iterations, a file will be created in the build/darknet/x64/backup/ folder of the weights of the last 100 iterations. ( yolo-obj_last.weights).
 
-<h1>#command for training :darknet.exe train data/obj.data cfg/yolo-obj.cfg yolo4.conv.137
-#command for testing on test video: darknet.exe detector demo data/obj.data cfg/yolo-obj.cfg backup/yolo4_mask_final.weights masktest.mp4 -out_filename result.avi -ext_output
-
-
+<h1>command for training :darknet.exe train data/obj.data cfg/yolo-obj.cfg yolo4.conv.137</h1>
+<h1>command for testing on test video: darknet.exe detector demo data/obj.data cfg/yolo-obj.cfg backup/yolo4_mask_final.weights masktest.mp4 -out_filename result.avi -ext_output
 </h1>
  
