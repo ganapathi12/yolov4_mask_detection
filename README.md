@@ -1,5 +1,5 @@
 # yolov4_mask_detection
-#you need to install darknet before trying out this program on your system.
+<h1>you need to install darknet before trying out this program on your system.</h1>
 This is project on mask detection, done by me and my teammate Balaji Dass for a mlh hackathon,Successfully  trained yolo model with custom datasets gathred from google and kaggle.
  as there are two classes we changed the following parameters in yolo config file:
 ○ First, we changed the variable max_batches=2000 x no_of_classes , in our case max_batches=4000.
@@ -17,9 +17,9 @@ Now, we have created two files train.txt and test.txt, these files will contain 
 we created a file obj.data in the build/darknet/x64/data folder.
 then we edit yolo detector file in such a way that every 100 iterations, a file will be created in the build/darknet/x64/backup/ folder of the weights of the last 100 iterations. ( yolo-obj_last.weights).
 
-#command for training :darknet.exe train data/obj.data cfg/yolo-obj.cfg yolo4.conv.137
+<h1>#command for training :darknet.exe train data/obj.data cfg/yolo-obj.cfg yolo4.conv.137
 #command for testing on test video: darknet.exe detector demo data/obj.data cfg/yolo-obj.cfg backup/yolo4_mask_final.weights masktest.mp4 -out_filename result.avi -ext_output
 
 
-
+</h1>
  
